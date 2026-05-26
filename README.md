@@ -1,7 +1,5 @@
 ## Covid19-PowerBI-Dashboard
 
-An automated, interactive Power BI dashboard tracking global COVID-19 statistics using a live dataset connection for real-time analytics.
-
 An automated, interactive, and dynamic Power BI dashboard designed to track and analyze global COVID-19 data. This project connects directly to a live data source to ensure real-time reporting without the need for manual data processing or external scripts.
 
 ## Features
@@ -34,19 +32,13 @@ The dashboard provides a 360-degree view of the pandemic's impact, including:
 
 3. **Forecasting & Trends:** Visualizing the curve to understand the trajectory of cases.
 
-## How to View This Project
-
-1. Clone this repository to your local machine.
-
-2. Open the `covid19-powerbi-dashboard.pbix` file using Power BI Desktop.
-
-3. Click on the Refresh button in the Home ribbon to fetch the latest live data automatically.
-
 ## Data Source Credibility
 
 The data used in this project is sourced directly from the **[Johns Hopkins University COVID-19 Dataset](https://github.com/CSSEGISandData/COVID-19)**, which is widely recognized as an official and reliable repository for pandemic tracking.
 
 ## Key DAX Measures Used
+
+'''DAX
 
 * **Total Active Cases:**
   
@@ -55,3 +47,11 @@ The data used in this project is sourced directly from the **[Johns Hopkins Univ
 * **Mortality Rate (%):**
 
   Mortality Rate = DIVIDE([Total Deaths], [Total Confirmed], 0)
+
+## How to View This Project
+
+1. Clone this repository to your local machine.
+
+2. Open the `covid19-powerbi-dashboard.pbix` file using Power BI Desktop.
+
+3. Click on the Refresh button in the Home ribbon to fetch the latest live data automatically.
