@@ -1,38 +1,62 @@
-# Covid-19 Dashboard
+## Covid19-PowerBI-Dashboard
 
-Covid-19 dashboard using Power BI.
+An automated, interactive, and dynamic Power BI dashboard designed to track and analyze global COVID-19 data. This project connects directly to a live data source to ensure real-time reporting without the need for manual data processing or external scripts.
 
-Power BI is a cloud-based business intelligence service. It is used to convert raw data into meaningful information by using intuitive visualizations and tables. Power BI is a collection of business intelligence and data visualization tools such as software services, apps and data connectors that together constitute Power BI.
+## Features
 
-### Prerequisites
+* **Live Data Connection:** Connected directly to the live [Johns Hopkins University COVID-19 dataset](https://github.com/CSSEGISandData/COVID-19) via Web Connector for automated data refreshes.
 
-```
-Power BI Desktop Software
-Python for data Analyses
-```
+* **Interactive Visualizations:** Deep dive into global metrics using interactive maps, slicers, and timelines.
 
-## Getting Started
+* **Key Metrics Tracked:** Total Confirmed Cases, Active Cases, Recoveries, and Mortality Rates.
 
-1. Install the Power Bi application and import the Dashboard-1.pbix into Power BI.
-2. Run the Covid-19 Analysis.ipynb notebook and get the processed dataset(CoronaVirus PowerBI Raw).
-3. To get upto date dataset go to https://github.com/CSSEGISandData/COVID-19. This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)
+* **Trend Analysis:** Time-series charts showing daily/weekly growth trends across different countries and regions.
 
-## Dashboard Features
+* **No Code Automation:** Fully built using Power BI's native capabilities, eliminating complex Python/Jupyter data prep bottlenecks.
 
-CoronaVirus Summary Statistics  
-o CoronaVirus Trends  
-o CoronaVirus Forecasts  
-o CoronaVirus breakdown analytics  
-o Coronavirus country wise statistics  
-o Coronavirus Datewise statistics
+## Tech Stack & Tools
 
-## Glimpse of the Dashboard
+* **BI Tool:** Power BI Desktop
 
-The dashboard-1.pdf file shows ow the dashboard looks.  
-![dashboard](/1.png)
-![dashboard](/2.png)
-![dashboard](/3.png)
+* **Data Source:** Live CSV/Web API 
 
-## Acknowledgments
+* **Data Transformation:** Power Query (M Language)
 
-Thank you to the 360 YP community .
+## Dashboard Insights
+
+The dashboard provides a 360-degree view of the pandemic's impact, including:
+
+1. **Global Summary:** High-level KPIs for quick decision-making.
+
+2. **Country-wise Breakdown:** Compare statistics between different nations seamlessly.
+
+3. **Forecasting & Trends:** Visualizing the curve to understand the trajectory of cases.
+
+## Dashboard Preview
+
+| Main Dashboard | Trend Analysis |
+|---|---|
+| ![Dashboard Screenshot 1](path-to-your-image1.png) | ![Dashboard Screenshot 2](path-to-your-image2.png) |
+
+## Data Source Credibility
+
+The data used in this project is sourced directly from the **[Johns Hopkins University COVID-19 Dataset](https://github.com/CSSEGISandData/COVID-19)**, which is widely recognized as an official and reliable repository for pandemic tracking.
+
+## Key DAX Measures Used
+
+* **Total Active Cases:**
+  '''DAX
+
+      Active Cases = [Total Confirmed] - [Total Recovered] - [Total Deaths]
+
+* **Mortality Rate (%):**
+
+      Mortality Rate = DIVIDE([Total Deaths], [Total Confirmed], 0)
+
+## How to View This Project
+
+1. Clone this repository to your local machine.
+
+2. Open the `covid19-powerbi-dashboard.pbix` file using Power BI Desktop.
+
+3. Click on the Refresh button in the Home ribbon to fetch the latest live data automatically.
