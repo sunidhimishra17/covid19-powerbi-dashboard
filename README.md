@@ -42,12 +42,6 @@ The dashboard provides a 360-degree view of the pandemic's impact, including:
 
 3. Click on the Refresh button in the Home ribbon to fetch the latest live data automatically.
 
-## Dashboard Preview
-
-| Main Dashboard | Trend Analysis |
-|---|---|
-| ![Dashboard Screenshot 1](path-to-your-image1.png) | ![Dashboard Screenshot 2](path-to-your-image2.png) |
-
 ## Data Source Credibility
 
 The data used in this project is sourced directly from the **[Johns Hopkins University COVID-19 Dataset](https://github.com/CSSEGISandData/COVID-19)**, which is widely recognized as an official and reliable repository for pandemic tracking.
